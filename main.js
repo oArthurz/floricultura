@@ -1,9 +1,9 @@
 $(document).ready(function()
 {
-    $('#imagensCarrosel').slick(
+    $('#imgCarrosel').slick(
         {
-            autoplay: true,
-            arrows:false,
+            autoplay:true,
+            arrows:false
         })
 
     $('.menuHamburguer').click(function()
@@ -15,9 +15,51 @@ $(document).ready(function()
 
     $('form').validate(
         {
-            telefone: 
+            rules:
             {
-                required:true
-            }
+                nome:
+                {
+                    required: true
+                },
+                telefone:
+                {
+                    required:true
+                },
+                floresInteresse:
+                {
+                    required:true
+                }
+            },
+            messages:
+                {
+                    nome:'Insira seu nome',
+                    telefone: 'Insira seu número',
+                    floresInteresse:'Flor desejada'
+                },
+                submitHandler: function(form)
+                {
+                    alert(`Enviado com sucesso!`)
+                },
+                invalidHandler: function(evento, validador)
+                {
+                    let camposInvalidos = validador.numberOfInvalids()
+                    if(camposInvalidos)
+                        {
+                            alert(`Exitem ${camposInvalidos} campos vazios`)
+                        }
+                }
+        })
+
+        $('.lista-flores button').click(function()
+        {
+            const destino = $('#faleConosco')
+            const nomeFlor = ($(this).parent().find('h3').text())
+
+            $('#flores').val(nomeFlor)
+
+            $('html').animate(
+                {
+                    scrollTop: destino.offset().top
+                }, 1000)    
         })
 })

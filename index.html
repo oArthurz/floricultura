@@ -22,75 +22,107 @@
         <nav>
           <div class="container">
             <ul>
-                <li><a href="#">Mais Solicitadas</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#maisSolicitadas">Mais Solicitadas</a></li>
+                <li><a href="#faleConosco">Fale Conosco</a></li>
+                <li><a href="#SobreLoja">Sobre Nós</a></li>
             </ul>
           </div>
         </nav>
     </header>
 
-    <div id="imagensCarrosel">
+    <div id="imgCarrosel">
         <img src="./flowers/slide1.jpg" alt="">
         <img src="./flowers/slide2.jpg" alt="">
         <img src="./flowers/slide3.jpg" alt="">
     </div>
 
-    <section>
+    <section id="SobreLoja">
+        <div class="container container-sobre">
+            <img src="./flowers/imagemSobre.jpg" alt="">
+            <div>
+                <h2>Sobre Nós</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, laboriosam officia quia quasi consequatur cupiditate asperiores fugiat mollitia? Molestias est ipsa culpa ipsum itaque neque, ducimus ex nesciunt quam voluptatum.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, sint voluptate nihil voluptatibus recusandae itaque harum aliquam! Sit voluptas accusamus, eaque blanditiis alias vitae ullam fugiat non dolores a quisquam.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="maisSolicitadas">
         <div class="container">
-            <h2>Nossas Flores</h2>
+            <h2>Mais Solicitadas</h2>
             <ul class="container-flex lista-flores">
                 <li>
-                    <img src="./flowers/branquinha.jpg" alt="">
-                    <h3>Flor</h3>
+                    <img class="imagensFlores" src="./flowers/branquinha.jpg" alt="">
+                    <h3>Margarida</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima dolor, iure facere cupiditate commodi aliquam illo quibusdam. Quam perspiciatis maiores incidunt eaque veritatis illo excepturi velit id pariatur placeat?
                     </p>
+                    <button type="button">Encomendar</button>
                 </li>
 
                 <li class="item-central">
-                    <img src="./flowers/flordegrade.jpg" alt="">
-                    <h3>Flor</h3>
+                    <img  class="imagensFlores"  src="./flowers/flordegrade.jpg" alt="">
+                    <h3>Margarida de Paris</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima dolor, iure facere cupiditate commodi aliquam illo quibusdam. Quam perspiciatis maiores incidunt eaque veritatis illo excepturi velit id pariatur placeat?
                     </p>
+                    <button type="button">Encomendar</button>
                 </li>
 
                 <li>
-                    <img src="./flowers/girasol.jpg" alt="">
-                    <h3>Flor</h3>
+                    <img  class="imagensFlores"  src="./flowers/girasol.jpg" alt="">
+                    <h3>Girassol</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima dolor, iure facere cupiditate commodi aliquam illo quibusdam. Quam perspiciatis maiores incidunt eaque veritatis illo excepturi velit id pariatur placeat?
                     </p>
+                    <button type="button">Encomendar</button>
                 </li>
 
                 <li>
-                    <img src="./flowers/rosinha.jpg" alt="">
-                    <h3>Flor</h3>
+                    <img  class="imagensFlores"  src="./flowers/rosinha.jpg" alt="">
+                    <h3>Ranunculus asiaticus</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima dolor, iure facere cupiditate commodi aliquam illo quibusdam. Quam perspiciatis maiores incidunt eaque veritatis illo excepturi velit id pariatur placeat?
                     </p>
+                    <button type="button">Encomendar</button>
                 </li>
 
 
                 <li class="item-central">
-                    <img src="./flowers/roxinha.jpg" alt="">
-                    <h3>Flor</h3>
+                    <img  class="imagensFlores"  src="./flowers/roxinha.jpg" alt="">
+                    <h3>Cinerária-dos-floristas</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit minima dolor, iure facere cupiditate commodi aliquam illo quibusdam. Quam perspiciatis maiores incidunt eaque veritatis illo excepturi velit id pariatur placeat?
                     </p>
+                    <button type="button">Encomendar</button>
                 </li>
            </ul>
         </div>
     </section>
 
-    <section>
+    <section id="faleConosco">
         <div class="container">
             <h2 class="contato">Encomende já seu buquê!</h2>
             <form>
                 <div>
-                    <label for="telefone">Digite seu número de telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="Digite..." required>
+                    <label id="etiqueta" for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Nome">
+                </div>
+
+                <div>
+                    <label id="etiqueta" for="telefone">Digite seu número de telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Número" required>
+                </div>
+
+                <div>
+                    <label id="etiqueta" for="flores">Flor de interesse:</label>
+                    <input type="text" id="flores" name="floresInteresse" placeholder="Ex: Margarida...">
                 </div>
                 <button type="submit">Entrar em Contato</button>
             </form>
