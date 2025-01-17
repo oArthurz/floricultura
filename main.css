@@ -111,6 +111,7 @@ nav li a
 .lista-flores img
 {
     max-width: 100%;
+    border-radius: 7px;
 }
 
 #imgCarrosel
@@ -191,6 +192,7 @@ button:hover
     border: 4px solid rgb(98, 24, 168);
     padding: 10px;
     border-radius: 5px;
+    border-radius: 50px;
 }
 
 .container-sobre
