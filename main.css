@@ -12,6 +12,10 @@ header
     align-items: center;
     padding-top: 16px;
     color: #fff;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 body
@@ -111,7 +115,9 @@ nav li a
 
 #imgCarrosel
 {
-    max-width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    margin: 30px auto;
 }
 
 .item-central
@@ -121,8 +127,7 @@ nav li a
 
 h2
 {
-    padding: 12px;
-    text-align: center;
+    padding: 12px 0 12px 0;
 }
 
 form
@@ -141,7 +146,7 @@ form label
 
 form input
 {
-    width: 50%;
+    width: 75%;
     display: block;
     padding: 8px;
     border-radius: 4px;
@@ -171,11 +176,12 @@ button:hover
 .contato
 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #SobreLoja
 {
-    padding: 46px 0;
+    padding: 20px 0;
 }
 
 #SobreLoja img
@@ -201,4 +207,9 @@ ul li button
 {
     font-weight: bold;
     margin-top: 15px;
+}
+
+.campo-form
+{
+    margin: 25px 0;
 }

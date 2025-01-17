@@ -3,8 +3,8 @@ $(document).ready(function()
     $('#imgCarrosel').slick(
         {
             autoplay:true,
-            arrows:false
-        })
+            arrows:true
+        }),
 
     $('.menuHamburguer').click(function()
     {
@@ -28,13 +28,18 @@ $(document).ready(function()
                 floresInteresse:
                 {
                     required:true
+                },
+                email:
+                {
+                    required: true
                 }
             },
             messages:
                 {
-                    nome:'Insira seu nome',
-                    telefone: 'Insira seu número',
-                    floresInteresse:'Flor desejada'
+                    nome:'(Insira seu nome)',
+                    telefone: '(Insira seu número)',
+                    floresInteresse:'(Flor desejada)',
+                    email:'(Seu E-Mail)'
                 },
                 submitHandler: function(form)
                 {
@@ -60,6 +65,6 @@ $(document).ready(function()
             $('html').animate(
                 {
                     scrollTop: destino.offset().top
-                }, 1000)    
+                }, 500)    
         })
 })

@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Floricultura</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
@@ -30,11 +32,15 @@
         </nav>
     </header>
 
+  <section>
     <div id="imgCarrosel">
         <img src="./flowers/slide1.jpg" alt="">
         <img src="./flowers/slide2.jpg" alt="">
         <img src="./flowers/slide3.jpg" alt="">
+        <img src="./flowers/slide4.jpg" alt="">
+        <img src="./flowers/slide5.jpg" alt="">
     </div>
+  </section>
 
     <section id="SobreLoja">
         <div class="container container-sobre">
@@ -110,19 +116,24 @@
         <div class="container">
             <h2 class="contato">Encomende já seu buquê!</h2>
             <form>
-                <div>
+                <div class="campo-form">
                     <label id="etiqueta" for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required placeholder="Nome">
                 </div>
 
-                <div>
-                    <label id="etiqueta" for="telefone">Digite seu número de telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="Número" required>
+                <div class="campo-form">
+                    <label id="etiqueta" for="telefone">Número de contato:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Cel/Tel" required>
                 </div>
 
-                <div>
+                <div class="campo-form">
                     <label id="etiqueta" for="flores">Flor de interesse:</label>
                     <input type="text" id="flores" name="floresInteresse" placeholder="Ex: Margarida...">
+                </div>
+
+                <div class="campo-form">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="cliente@gmail.com">
                 </div>
                 <button type="submit">Entrar em Contato</button>
             </form>
